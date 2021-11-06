@@ -1,0 +1,19 @@
+# about PATH:
+    1) what is PATH
+    2) edit PATH
+
+
+# cmd basic:
+    1) cd: change current directory
+    2) dir: list directory content
+    3) cls: clear screen
+    4) mkdir: create new directory
+    5) echo: echo some thing into console
+
+
+# bash basic:
+    1) cd: ...
+    2) ls: list directory content
+    3) clear: clear screen
+    4) mkdir: ...
+    5) echo: ...

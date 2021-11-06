@@ -1,0 +1,43 @@
+# computer for:
+    1) accuracy
+    2) speed
+
+
+# key characters in computer:
+    1) Gottfried Wilhelm Leibniz
+    2) George Bool
+    2) Alan Turing
+    3) John Von Neuman
+
+
+# how computers works:
+    1) about binary numbers
+    2) boolean logic
+    3) logic gates
+    4) half-adder, full-adder
+    5) CPU
+
+
+# programming:
+    1) tell CPU about tasks
+
+
+# programming languages:
+    1) machine code
+    2) assembly
+    3) C
+    4) C#, Java
+    5) Python, PHP, Ruby, JavaScript and ...
+
+
+# about Python:
+    1) advantages:
+        * easy to read and write
+        * improved productivity
+        * dynamically typed
+        * free and open-source
+        * libraries...
+    2) disadvantages:
+        * slow
+        * not memory efficient
+    3) simple but not simple!

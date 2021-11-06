@@ -1,0 +1,11 @@
+# requirements:
+    1) os:
+        * linux
+        * mac
+        * windows
+    2) python programming language:
+        * https://python.org/downloads
+    3) source editor:
+        * notepad++: https://notepad-plus-plus.org/downloads
+        * vscode: https://code.visualstudio.com/download
+        * pycharm: https://www.jetbrains.com/pycharm/download

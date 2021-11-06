@@ -1,0 +1,2 @@
+# run python scripts:
+    1) python script_name.py
