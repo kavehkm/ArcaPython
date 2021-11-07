@@ -1,0 +1,19 @@
+# define variables in python
+    1) variable_name = variable_value
+
+
+# variable name rules:
+    1) combination of letters, numbers and underscore: a...z | A...Z | 0...9 | _
+    2) cannot start with a numbers: 0...9
+
+
+# naming conventions:
+    1) PascalCase
+        * MyNumber
+        * FirstName
+    2) camelCase
+        * myNumber
+        * firstName
+    3) snake_eye
+        * my_number
+        * first_name
