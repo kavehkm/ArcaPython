@@ -1,0 +1,7 @@
+# programming main constructs:
+    1) sequence
+        * order of instructions
+    2) selection
+        * choose instructions
+    3) iteration
+        * repeat instructions
