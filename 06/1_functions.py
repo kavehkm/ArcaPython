@@ -1,62 +1,86 @@
-# define and call functions
+# define functions
 
 
-# - without arguments and return value(None returned)
+###################################################
+# without arguments and also without return value #
+###################################################
+# - define
 def welcome():
     print('welcome bro')
+
 # - call
-welcome()   # 'welcome bro'
+welcome()
 
 
-# - without return value(None returned)
+########################
+# without return value #
+########################
+# - define
 def welcome(name):
     message = 'welcome bro {}'.format(name)
     print(message)
-# - call
-welcome('kaveh')    # 'welcome bro kaveh'
-# ~ call
+
+# - call1
+welcome('kaveh')
+# - call2
 friend = 'amin'
-welcome(friend)     # 'welcome bro amin'
+welcome(friend)
 
 
-# with argument and return value
+##################################
+# with argument and return value #
+##################################
+# - define
 def welcome(name):
     message = 'welcome bro {}'.format(name)
     return message
+
 # - call
 result = welcome('kaveh')
-print(result)       # 'welcome bro kaveh'
+print(result)
 
 
-# with positional and optional arguments
+##########################################
+# with positional and optional arguments #
+##########################################
+# - define
 def welcome(name, message='welcome bro'):
     message = '{} {}'.format(name, message)
     return message
-# - call
+
+# - call1
 result = welcome('kaveh', 'welcome dear')
-print(result)       # 'welcome dear kaveh'
-# ~ call
+print(result)
+# - call2
 result = welcome('kaveh')
-print(result)       # 'welcome bro kaveh'
+print(result)
 
 
-# return more than just one value!
+####################################
+# return more than just one value! #
+####################################
+# - define
 def circle_compute(radius):
     area = 3.1415 * radius ** 2
     environment = 2 * 3.1415 * radius
     return area, environment
+
 # - call
 e, a = circle_compute(4)
-print(e, a)         # 25.132 50.264
+print(e, a)
 
 
-# packing
+###########
+# packing #
+###########
 # - limited args
 def summer(a, b, c, d, e, f, G):
     result = a + b + c + d + e + f + G
     return result
+
 # - call
-print(summer(1, 10, 100, 101, 100, 10, 1))      # 323
+print(summer(1, 10, 100, 101, 100, 10, 1))
+
 
 # - unlimited args
 def summer(*numbers):
@@ -64,15 +88,20 @@ def summer(*numbers):
     for number in numbers:
         s += number
     return s
+
 # - call
-print(summer(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))    # (1 + 10) * 5 =  55
+print(summer(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
 
 
-# unpacking
+#############
+# unpacking #
+#############
+# - define
 def summer(a, b, c, d, e, f, G):
     result = a + b + c + d + e + f + G
     return result
-# - call
+
+# - call1
 numbers = [6, 5, 4, 3, 2, 1, 7]
 r = summer(
     numbers[0],
@@ -83,20 +112,25 @@ r = summer(
     numbers[5],
     numbers[6]
     )
-print(r)                # 28
-# ~ call
+print(r)
+
+# - call2
 numbers = [6, 5, 4, 3, 2, 1, 7]
-print(summer(*numbers)) # 28
+print(summer(*numbers))
 
 
-# packing and unpacking
+#########################
+# packing and unpacking #
+#########################
+# - define
 def average(*marks):
     s = sum(marks)
     count = len(marks)
     return s / count
-# - call
+
+# - call1
 students_marks = [18, 10, 12, 19, 20, 19.99]
-print(average(*students_marks)) # 16.498333333
+print(average(*students_marks))
 
 
 # TODO: keyword pack and unpack
