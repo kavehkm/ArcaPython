@@ -1,0 +1,12 @@
+# python scopes:
+    1) built-in:
+        scope that loaded by python when you run a script, contains:
+            * built-in functions
+            * exceptions
+            * language keywords
+    2) global:
+        all variables and functions that defined in a python script(module)
+    3) enclosing:
+        variables and functions that defined on top of a nested function
+    4) local:
+        variables that defined inside a function
