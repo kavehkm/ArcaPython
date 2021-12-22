@@ -65,3 +65,27 @@ content = '\nمن در پایان فایل هستم'
 bin_handler.write(content.encode())
 # - close
 bin_handler.close()
+
+
+################
+# FILE METHODS #
+################
+
+# open testtext.txt to test readonly file methods
+fh = open('testtext.txt', 'rt')
+
+# - read(n)                             read n bytes from file
+fh.read(5)                              # 'sunt '
+# - seek(index)                         move cursor in index position
+fh.seek(10)
+fh.read(2)                              # 'lp'
+# - tell                                where is cursor?
+fh.tell()                               # 12 
+# - close                               # close open file handler
+fh.close()
+
+# open testtext2.txt to test write method
+fh = open('testtext2.txt', 'wt')
+# - write
+fh.write('some content is here')        # 20 : number of character that wrote on the file
+fh.close()
