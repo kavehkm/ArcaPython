@@ -1,3 +1,7 @@
+########
+# TEXT #
+########
+
 # read from text file:
 # - open file
 file_handler = open('testtext.txt', 'rt')       # rt: read-text
@@ -7,7 +11,6 @@ file_content = file_handler.read()
 file_handler.close()
 # - print out file content
 print(file_content)
-
 
 # write into text file:
 # - open file
@@ -19,7 +22,6 @@ file_handler.write(message)
 # - close
 file_handler.close()
 
-
 # append at end of text file:
 # - open file
 file_handler = open('testtext.txt', 'at')       # at: append text
@@ -29,3 +31,37 @@ content = '\nIm at the end of file'
 file_handler.write(content)
 # - close
 file_handler.close()
+
+
+##########
+# BINARY #
+##########
+
+# read from binary file:
+# - open file
+bin_handler = open('testbin.bin', 'rb')         # rb: read binary
+# - read content as bytes
+bin_content = bin_handler.read()
+# - close
+bin_handler.close()
+# - print out content of binary file
+print(bin_content)
+
+
+# write into binary file:
+# - open file
+bin_handler = open('testbin1.bin', 'wb')        # wb: write binary
+# - write bytes on file
+content = 'خسته نباشید!'
+bin_handler.write(content.encode())
+# - close
+bin_handler.close()
+
+# append at the end of binary file:
+# - open file
+bin_handler = open('testbin.bin', 'ab')         # ab: append binary
+# - append
+content = '\nمن در پایان فایل هستم'
+bin_handler.write(content.encode())
+# - close
+bin_handler.close()
