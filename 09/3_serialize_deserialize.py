@@ -67,6 +67,6 @@ with open(settings_file, 'rt') as f:
 # - deserilize
 deserialized_settings = deserializer(content)
 
-# print out result
+# - print out result
 for key, value in deserialized_settings.items():
     print('{} => {}'.format(key, value))
