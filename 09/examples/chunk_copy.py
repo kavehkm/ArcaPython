@@ -1,5 +1,4 @@
 # standard
-from os import read
 import time
 
 
