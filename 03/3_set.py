@@ -41,7 +41,7 @@ s4.add(2.626066)                # {'kaveh', '0.066, 6.6, 2.626066}
 # clear
 s4.clear()                      # {}
 # difference
-s1.difference(s1)               # {1, 2}
+s1.difference(s2)               # {1, 2}
 # discard
 s1.discard(5)                   # {1, 2, 3, 4}
 s1.discard(10)                  # {1, 2, 3, 5} 
@@ -49,7 +49,7 @@ s1.discard(10)                  # {1, 2, 3, 5}
 s1.remove(4)                    # {1, 2, 3}
 s1.remove(10)                   # raise error!
 # intersection
-s1.intersection(s2)             # {3}
+s1.intersection(s2)             # {3, 4, 5}
 # union
 s1.union(s2)                    # {1, 2, 3, 4, 5, 6, 7}
 # issubset
@@ -59,4 +59,4 @@ s1.issubset(s2)                 # False
 s3.issuperset(s1)               # True
 s1.issuperset(s2)               # False
 # symmetric_difference
-s1.symmetric_difference(s2)     # {1, 2, 4, 5, 6, 7}
+s1.symmetric_difference(s2)     # {1, 2, 6, 7}
