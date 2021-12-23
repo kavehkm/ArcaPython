@@ -59,4 +59,4 @@ s1.issubset(s2)                 # False
 s3.issuperset(s1)               # True
 s1.issuperset(s2)               # False
 # symmetric_difference
-s1.symmetric_difference(s2)     # {1, 2, 6, 7} change
+s1.symmetric_difference(s2)     # {1, 2, 4, 5, 6, 7}
