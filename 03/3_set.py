@@ -41,7 +41,7 @@ s4.add(2.626066)                # {'kaveh', '0.066, 6.6, 2.626066}
 # clear
 s4.clear()                      # {}
 # difference
-s1.difference(s1)               # {1, 2}
+s1.difference(s2)               # {1, 2}
 # discard
 s1.discard(5)                   # {1, 2, 3, 4}
 s1.discard(10)                  # {1, 2, 3, 5} 
